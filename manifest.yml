@@ -1,0 +1,12 @@
+applications:
+- name: pcf-docker-scheduler-demo
+  instances: 1
+  disk_quota: 1G
+  memory: 128M
+  no-route: true
+  docker:
+    image: starkandwayne/pcf-docker-scheduler-demo
+  env:
+    S3_BUCKET: ((S3_BUCKET))
+    AWS_ACCESS_KEY_ID: ((AWS_ACCESS_KEY_ID))
+    AWS_SECRET_ACCESS_KEY: ((AWS_SECRET_ACCESS_KEY))

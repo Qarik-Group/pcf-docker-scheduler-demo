@@ -1,0 +1,8 @@
+applications:
+- name: pcf-docker-scheduler-demo
+  instances: 1
+  disk_quota: 1G
+  memory: 128M
+  no-route: true
+  docker:
+    image: starkandwayne/pcf-docker-scheduler-demo
